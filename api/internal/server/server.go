@@ -17,7 +17,7 @@ func NewServer(db *pgxpool.Pool) *Server {
 func (s *Server) RegisterRoutes(r chi.Router) {
 	r.Route("/api", func(r chi.Router) {
 		r.Route("/v1", func(r chi.Router) {
-			r.Mount("/player", player.Route(s))
+			r.Mount("/player", player.Route(s.DB))
 			// auth routes later
 		})
 	})

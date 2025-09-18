@@ -1,5 +1,5 @@
 // internal/players/handlers.go
-package players
+package player
 
 import (
 	"context"
@@ -18,7 +18,7 @@ type Player struct {
 	CreatedAt   time.Time `json:"created_at"`
 }
 
-func Routes(pool *pgxpool.Pool) http.Handler {
+func Route(pool *pgxpool.Pool) http.Handler {
 	r := chi.NewRouter()
 	r.Get("/", listPlayers(pool))
 	r.Post("/", createPlayer(pool))
