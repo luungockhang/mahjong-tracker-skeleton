@@ -13,7 +13,7 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"github.com/luungockhang/mahjong-tracker-skeleton/internal/server" // 👈 replace "yourmodule" with your module path from go.mod
+	"github.com/luungockhang/mahjong-tracker-skeleton/api/internal/server" // 👈 replace "yourmodule" with your module path from go.mod
 )
 
 func main() {

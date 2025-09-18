@@ -3,7 +3,7 @@ package server
 import (
 	"github.com/go-chi/chi/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
-	"github.com/luungockhang/mahjong-tracker-skeleton/internal/player"
+	"github.com/luungockhang/mahjong-tracker-skeleton/api/internal/player"
 )
 
 type Server struct {

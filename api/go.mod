@@ -1,4 +1,4 @@
-module github.com/luungockhang/mahjong-tracker-skeleton // change this in new projects
+module github.com/luungockhang/mahjong-tracker-skeleton/api // change this in new projects
 
 go 1.25.1
 
